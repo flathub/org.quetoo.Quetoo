@@ -12,7 +12,7 @@
     "--share=network",
     "--socket=pulseaudio",
     "--system-talk-name=org.freedesktop.UPower",
-    "--filesystem=~/.quetoo"
+    "--persist=.quetoo"
   ],
   "cleanup":[  
     "/include",
