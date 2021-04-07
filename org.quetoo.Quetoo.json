@@ -116,7 +116,7 @@
         {
           "type":"git",
           "url":"https://github.com/jdolan/Objectively.git",
-          "commit": "276488a5a3a949accd740b2bb0925d57eecd507a"
+          "commit": "8b40fe53a376ba312c0e0df45f40d9d1bb7ff914"
         },
         {
           "type":"script",
@@ -133,7 +133,7 @@
         {
           "type":"git",
           "url":"https://github.com/jdolan/ObjectivelyMVC.git",
-          "commit": "1535d53e2748b551256ec8ee53c29171b92f5bf9"
+          "commit": "5dbd343a90620617df9dd4ab761dba43e98aadfc"
         },
         {
           "type":"script",
@@ -161,7 +161,7 @@
         {
           "type":"git",
           "url":"https://github.com/jdolan/quetoo.git",
-          "commit": "07fc275de7fff3f9c80a5d1e3cf8845f509afef2"
+          "commit": "7dfb88911aff5a37ea46a01ff201a612295567a3"
         },
         {
           "type":"script",
@@ -183,7 +183,7 @@
         {
           "type":"git",
           "url":"https://github.com/jdolan/quetoo-data.git",
-          "commit": "9948bed8028d3c62c274fb31274c10530a0b37aa"
+          "commit": "fb2ae821aff0b46018aa9ea8939946209490d3ce"
         }
       ]
 	}
