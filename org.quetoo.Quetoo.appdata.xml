@@ -4,15 +4,13 @@
   <id type="desktop">org.quetoo.Quetoo.desktop</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0+</project_license>
-  <summary>A Free, standalone first person shooter video game</summary>
+  <summary>A free first person shooter for Mac, PC and Linux</summary>
   <description>
     <p>
-      Quetoo is a Free, standalone first person shooter video game based
-      on id Tech2. Our goal is to bring the fun of oldschool deathmatch
-      to a more contemporary platform, and perhaps to a new generation
-      of gamers. Quetoo is multiplayer-only. There is no single-player
-      or offline gameplay mode. If you have no Internet and no friends,
-      Quetoo might not be for you.
+      Quetoo ("Q2") is a free first person shooter for Mac, PC and Linux, 
+      with roots steeped in the venerable Quake series. Our goal is to 
+      bring the fun of oldschool deathmatch to a new generation of gamers. 
+      We're pwning nubz, one rail slug at a time.
     </p>
   </description>
   <url type="homepage">http://www.quetoo.org/</url>
@@ -21,7 +19,7 @@
     <screenshot>https://farm8.staticflickr.com/7191/6840396554_70726caf45_c.jpg</screenshot>
     <screenshot>https://farm8.staticflickr.com/7044/6840397000_34e7699f1f_c.jpg</screenshot>
   </screenshots>
-  <update_contact>maci.stgn@gmail.com</update_contact>
+  <update_contact>jay@jaydolan.com</update_contact>
   <content_rating type="oars-1.0">
     <content_attribute id="violence-cartoon">none</content_attribute>
     <content_attribute id="violence-fantasy">intense</content_attribute>
@@ -44,4 +42,7 @@
     <content_attribute id="money-purchasing">none</content_attribute>
     <content_attribute id="money-gambling">none</content_attribute>
   </content_rating>
+  <releases>
+    <release version="0.1.0" date="2021-04-08" type="development"/>
+  </releases>
 </application>
