@@ -1,10 +1,10 @@
 {
-  "app-id":"org.quetoo.Quetoo",
-  "command":"quetoo",
-  "runtime":"org.freedesktop.Platform",
-  "runtime-version":"20.08",
-  "sdk":"org.freedesktop.Sdk",
-  "finish-args":[
+  "app-id": "org.quetoo.Quetoo",
+  "command": "quetoo",
+  "runtime": "org.freedesktop.Platform",
+  "runtime-version": "23.08",
+  "sdk": "org.freedesktop.Sdk",
+  "finish-args": [
     "--share=ipc",
     "--socket=x11",
     "--socket=wayland",
@@ -14,7 +14,7 @@
     "--system-talk-name=org.freedesktop.UPower",
     "--persist=.quetoo"
   ],
-  "cleanup":[
+  "cleanup": [
     "/include",
     "/lib/pkgconfig",
     "/share/pkgconfig",
@@ -28,164 +28,163 @@
     "/share/info",
     "/share/doc"
   ],
-  "modules":[
+  "modules": [
     {
-      "name":"metadata",
-      "buildsystem":"simple",
-      "build-commands":[
-		"install -Dm644 org.quetoo.Quetoo.appdata.xml /app/share/appdata/org.quetoo.Quetoo.appdata.xml",
-		"install -Dm644 org.quetoo.Quetoo.desktop /app/share/applications/org.quetoo.Quetoo.desktop",
-		"install -Dm644 quetoo_6_256x256x32.png /app/share/icons/hicolor/256x256/apps/org.quetoo.Quetoo.png",
-		"install -Dm644 quetoo_7_128x128x32.png /app/share/icons/hicolor/128x128/apps/org.quetoo.Quetoo.png",
-		"install -Dm644 quetoo_8_64x64x32.png /app/share/icons/hicolor/64x64/apps/org.quetoo.Quetoo.png",
-		"install -Dm644 quetoo_9_48x48x32.png /app/share/icons/hicolor/48x48/apps/org.quetoo.Quetoo.png",
-		"install -Dm644 quetoo_10_40x40x32.png /app/share/icons/hicolor/40x40/apps/org.quetoo.Quetoo.png",
-		"install -Dm644 quetoo_11_32x32x32.png /app/share/icons/hicolor/32x32/apps/org.quetoo.Quetoo.png",
-		"install -Dm644 quetoo_12_24x24x32.png /app/share/icons/hicolor/24x24/apps/org.quetoo.Quetoo.png",
-		"install -Dm644 quetoo_13_20x20x32.png /app/share/icons/hicolor/20x20/apps/org.quetoo.Quetoo.png",
-		"install -Dm644 quetoo_14_16x16x32.png /app/share/icons/hicolor/16x16/apps/org.quetoo.Quetoo.png"
+      "name": "metadata",
+      "buildsystem": "simple",
+      "build-commands": [
+        "install -Dm644 org.quetoo.Quetoo.appdata.xml /app/share/appdata/org.quetoo.Quetoo.appdata.xml",
+        "install -Dm644 org.quetoo.Quetoo.desktop /app/share/applications/org.quetoo.Quetoo.desktop",
+        "install -Dm644 quetoo_6_256x256x32.png /app/share/icons/hicolor/256x256/apps/org.quetoo.Quetoo.png",
+        "install -Dm644 quetoo_7_128x128x32.png /app/share/icons/hicolor/128x128/apps/org.quetoo.Quetoo.png",
+        "install -Dm644 quetoo_8_64x64x32.png /app/share/icons/hicolor/64x64/apps/org.quetoo.Quetoo.png",
+        "install -Dm644 quetoo_9_48x48x32.png /app/share/icons/hicolor/48x48/apps/org.quetoo.Quetoo.png",
+        "install -Dm644 quetoo_10_40x40x32.png /app/share/icons/hicolor/40x40/apps/org.quetoo.Quetoo.png",
+        "install -Dm644 quetoo_11_32x32x32.png /app/share/icons/hicolor/32x32/apps/org.quetoo.Quetoo.png",
+        "install -Dm644 quetoo_12_24x24x32.png /app/share/icons/hicolor/24x24/apps/org.quetoo.Quetoo.png",
+        "install -Dm644 quetoo_13_20x20x32.png /app/share/icons/hicolor/20x20/apps/org.quetoo.Quetoo.png",
+        "install -Dm644 quetoo_14_16x16x32.png /app/share/icons/hicolor/16x16/apps/org.quetoo.Quetoo.png"
       ],
-      "sources":[
+      "sources": [
         {
-          "type":"file",
-          "path":"org.quetoo.Quetoo.appdata.xml"
+          "type": "file",
+          "path": "org.quetoo.Quetoo.appdata.xml"
         },
         {
-          "type":"file",
-          "path":"org.quetoo.Quetoo.desktop"
+          "type": "file",
+          "path": "org.quetoo.Quetoo.desktop"
         },
         {
-          "type":"file",
-          "path":"res/quetoo_6_256x256x32.png"
+          "type": "file",
+          "path": "res/quetoo_6_256x256x32.png"
         },
         {
-          "type":"file",
-          "path":"res/quetoo_7_128x128x32.png"
-
+          "type": "file",
+          "path": "res/quetoo_7_128x128x32.png"
         },
         {
-          "type":"file",
-          "path":"res/quetoo_8_64x64x32.png"
+          "type": "file",
+          "path": "res/quetoo_8_64x64x32.png"
         },
         {
-          "type":"file",
-          "path":"res/quetoo_9_48x48x32.png"
+          "type": "file",
+          "path": "res/quetoo_9_48x48x32.png"
         },
         {
-          "type":"file",
-          "path":"res/quetoo_10_40x40x32.png"
+          "type": "file",
+          "path": "res/quetoo_10_40x40x32.png"
         },
         {
-          "type":"file",
-          "path":"res/quetoo_11_32x32x32.png"
+          "type": "file",
+          "path": "res/quetoo_11_32x32x32.png"
         },
         {
-          "type":"file",
-          "path":"res/quetoo_12_24x24x32.png"
+          "type": "file",
+          "path": "res/quetoo_12_24x24x32.png"
         },
         {
-          "type":"file",
-          "path":"res/quetoo_13_20x20x32.png"
+          "type": "file",
+          "path": "res/quetoo_13_20x20x32.png"
         },
         {
-          "type":"file",
-          "path":"res/quetoo_14_16x16x32.png"
+          "type": "file",
+          "path": "res/quetoo_14_16x16x32.png"
         }
       ]
     },
     {
-      "name":"Check",
-      "sources":[
+      "name": "Check",
+      "sources": [
         {
-          "type":"git",
-          "url":"https://github.com/libcheck/check.git",
-          "commit": "90db730441bab1656c4447fafd45ffa39660f408"
+          "type": "git",
+          "url": "https://github.com/libcheck/check.git",
+          "commit": "455005dc29dc6727de7ee36fee4b49a13b39f73f"
         },
         {
-          "type":"script",
-          "commands":[
+          "type": "script",
+          "commands": [
             "autoreconf -fiv"
           ],
-          "dest-filename":"autogen.sh"
+          "dest-filename": "autogen.sh"
         }
       ]
     },
     {
-      "name":"Objectively",
-      "sources":[
+      "name": "Objectively",
+      "sources": [
         {
-          "type":"git",
-          "url":"https://github.com/jdolan/Objectively.git",
-          "commit": "8b40fe53a376ba312c0e0df45f40d9d1bb7ff914"
+          "type": "git",
+          "url": "https://github.com/jdolan/Objectively.git",
+          "commit": "00dd3c1ffde3697e6945510911de8e5bb322c735"
         },
         {
-          "type":"script",
-          "commands":[
+          "type": "script",
+          "commands": [
             "autoreconf -fiv"
           ],
-          "dest-filename":"autogen.sh"
+          "dest-filename": "autogen.sh"
         }
       ]
     },
     {
-      "name":"ObjectivelyMVC",
-      "sources":[
+      "name": "ObjectivelyMVC",
+      "sources": [
         {
-          "type":"git",
-          "url":"https://github.com/jdolan/ObjectivelyMVC.git",
-          "commit": "5dbd343a90620617df9dd4ab761dba43e98aadfc"
+          "type": "git",
+          "url": "https://github.com/jdolan/ObjectivelyMVC.git",
+          "commit": "43cd3a5750d136dac2cf795733fbbc868ba55302"
         },
         {
-          "type":"script",
-          "commands":[
+          "type": "script",
+          "commands": [
             "autoreconf -fiv"
           ],
-          "dest-filename":"autogen.sh"
+          "dest-filename": "autogen.sh"
         }
       ]
     },
     {
-      "name":"Physfs",
-      "buildsystem":"cmake",
-      "sources":[
+      "name": "Physfs",
+      "buildsystem": "cmake",
+      "sources": [
         {
-          "type":"archive",
-          "url":"https://icculus.org/physfs/downloads/physfs-3.0.1.tar.bz2",
-          "sha256":"b77b9f853168d9636a44f75fca372b363106f52d789d18a2f776397bf117f2f1"
+          "type": "archive",
+          "url": "https://icculus.org/physfs/downloads/physfs-3.0.2.tar.bz2",
+          "sha256": "304df76206d633df5360e738b138c94e82ccf086e50ba84f456d3f8432f9f863"
         }
       ]
     },
     {
-      "name":"Quetoo",
-      "sources":[
+      "name": "Quetoo",
+      "sources": [
         {
-          "type":"git",
-          "url":"https://github.com/jdolan/quetoo.git",
-          "commit": "7dfb88911aff5a37ea46a01ff201a612295567a3"
+          "type": "git",
+          "url": "https://github.com/jdolan/quetoo.git",
+          "commit": "f9f4ce32b30537ae76f7d89bc10a17123807527e"
         },
         {
-          "type":"script",
-          "commands":[
+          "type": "script",
+          "commands": [
             "autoreconf -fiv"
           ],
-          "dest-filename":"autogen.sh"
+          "dest-filename": "autogen.sh"
         }
       ]
     },
     {
-      "name":"Quetoo-Data",
-      "buildsystem":"simple",
-      "build-commands":[
+      "name": "Quetoo-Data",
+      "buildsystem": "simple",
+      "build-commands": [
         "mkdir -p /app/share/quetoo",
-		"cp -r target/default /app/share/quetoo"
+        "cp -r target/default /app/share/quetoo"
       ],
-      "sources":[
+      "sources": [
         {
-          "type":"git",
-          "url":"https://github.com/jdolan/quetoo-data.git",
-          "commit": "fb2ae821aff0b46018aa9ea8939946209490d3ce"
+          "type": "git",
+          "url": "https://github.com/jdolan/quetoo-data.git",
+          "commit": "3e8dec5a0ec3cdd3aefa8bc36bda27758a1294dd"
         }
       ]
-	}
+    }
   ]
 }
