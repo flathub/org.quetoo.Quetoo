@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<application>
+<!-- Copyright [year] [name] -->
+<component type="desktop-application">
+  <id>org.quetoo.Quetoo.desktop</id>
   <name>Quetoo</name>
-  <id type="desktop">org.quetoo.Quetoo.desktop</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0+</project_license>
+  <developer id="org.quetoo">
+    <name>jdolan</name>
+  </developer>
   <summary>A free first person shooter for Mac, PC and Linux</summary>
   <description>
     <p>
@@ -14,35 +18,21 @@
     </p>
   </description>
   <url type="homepage">http://www.quetoo.org/</url>
+  <launchable type="desktop-id">org.quetoo.Quetoo.desktop</launchable>
   <screenshots>
-    <screenshot type="default">https://farm3.staticflickr.com/2818/33459192014_2e76a22a09_c.jpg</screenshot>
-    <screenshot>https://farm8.staticflickr.com/7191/6840396554_70726caf45_c.jpg</screenshot>
-    <screenshot>https://farm8.staticflickr.com/7044/6840397000_34e7699f1f_c.jpg</screenshot>
+    <screenshot type="default">
+      <image>https://farm3.staticflickr.com/2818/33459192014_2e76a22a09_c.jpg</image>
+    </screenshot>
+    <screenshot>
+      <image>https://farm8.staticflickr.com/7191/6840396554_70726caf45_c.jpg</image>
+    </screenshot>
+    <screenshot>
+      <image>https://farm8.staticflickr.com/7044/6840397000_34e7699f1f_c.jpg</image>
+    </screenshot>
   </screenshots>
   <update_contact>jay@jaydolan.com</update_contact>
-  <content_rating type="oars-1.0">
-    <content_attribute id="violence-cartoon">none</content_attribute>
-    <content_attribute id="violence-fantasy">intense</content_attribute>
-    <content_attribute id="violence-realistic">none</content_attribute>
-    <content_attribute id="violence-bloodshed">intense</content_attribute>
-    <content_attribute id="violence-sexual">none</content_attribute>
-    <content_attribute id="drugs-alcohol">none</content_attribute>
-    <content_attribute id="drugs-narcotics">none</content_attribute>
-    <content_attribute id="drugs-tobacco">none</content_attribute>
-    <content_attribute id="sex-nudity">none</content_attribute>
-    <content_attribute id="sex-themes">none</content_attribute>
-    <content_attribute id="language-profanity">mild</content_attribute>
-    <content_attribute id="language-humor">none</content_attribute>
-    <content_attribute id="language-discrimination">none</content_attribute>
-    <content_attribute id="social-chat">intense</content_attribute>
-    <content_attribute id="social-info">none</content_attribute>
-    <content_attribute id="social-audio">none</content_attribute>
-    <content_attribute id="social-location">none</content_attribute>
-    <content_attribute id="social-contacts">none</content_attribute>
-    <content_attribute id="money-purchasing">none</content_attribute>
-    <content_attribute id="money-gambling">none</content_attribute>
-  </content_rating>
+  <content_rating type="oars-1.1" />
   <releases>
     <release version="0.1.0" date="2021-04-08" type="development"/>
   </releases>
-</application>
+</component>
