@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright [year] [name] -->
 <component type="desktop-application">
-  <id>org.quetoo.Quetoo.desktop</id>
+  <id>org.quetoo.Quetoo</id>
   <name>Quetoo</name>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0+</project_license>
@@ -11,27 +10,43 @@
   <summary>A free first person shooter for Mac, PC and Linux</summary>
   <description>
     <p>
-      Quetoo ("Q2") is a free first person shooter for Mac, PC and Linux, 
-      with roots steeped in the venerable Quake series. Our goal is to 
-      bring the fun of oldschool deathmatch to a new generation of gamers. 
+      Quetoo ("Q2") is a free first person shooter for Mac, PC and Linux,
+      with roots steeped in the venerable Quake series. Our goal is to
+      bring the fun of oldschool deathmatch to a new generation of gamers.
       We're pwning nubz, one rail slug at a time.
     </p>
   </description>
-  <url type="homepage">http://www.quetoo.org/</url>
+  <url type="homepage">https://www.quetoo.org</url>
+  <url type="bugtracker">https://github.com/jdolan/quetoo/issues</url>
+  <url type="vcs-browser">https://github.com/jdolan/quetoo</url>
   <launchable type="desktop-id">org.quetoo.Quetoo.desktop</launchable>
+  <provides>
+    <id>org.quetoo.Quetoo.desktop</id>
+  </provides>
   <screenshots>
     <screenshot type="default">
+      <caption>In-game screenshot</caption>
       <image>https://farm3.staticflickr.com/2818/33459192014_2e76a22a09_c.jpg</image>
     </screenshot>
     <screenshot>
+      <caption>In-game screenshot</caption>
       <image>https://farm8.staticflickr.com/7191/6840396554_70726caf45_c.jpg</image>
     </screenshot>
     <screenshot>
+      <caption>In-game screenshot</caption>
       <image>https://farm8.staticflickr.com/7044/6840397000_34e7699f1f_c.jpg</image>
     </screenshot>
   </screenshots>
   <update_contact>jay@jaydolan.com</update_contact>
-  <content_rating type="oars-1.1" />
+  <content_rating type="oars-1.1">
+    <content_attribute id="violence-cartoon">intense</content_attribute>
+    <content_attribute id="violence-fantasy">intense</content_attribute>
+    <content_attribute id="violence-realistic">intense</content_attribute>
+    <content_attribute id="violence-bloodshed">intense</content_attribute>
+    <content_attribute id="violence-desecration">intense</content_attribute>
+<!--    <content_attribute id="social-chat">intense</content_attribute>
+    <content_attribute id="social-audio">intense</content_attribute>-->
+    </content_rating>
   <releases>
     <release version="0.1.0" date="2021-04-08" type="development"/>
   </releases>
