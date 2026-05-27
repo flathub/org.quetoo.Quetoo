@@ -35,15 +35,23 @@
   <screenshots>
     <screenshot type="default">
       <caption>In-game screenshot</caption>
-      <image>https://farm3.staticflickr.com/2818/33459192014_2e76a22a09_c.jpg</image>
+      <image>https://quetoo.org/images/screenshots/quetoo001.jpg</image>
     </screenshot>
     <screenshot>
       <caption>In-game screenshot</caption>
-      <image>https://farm8.staticflickr.com/7191/6840396554_70726caf45_c.jpg</image>
+      <image>https://quetoo.org/images/screenshots/quetoo004.jpg</image>
     </screenshot>
     <screenshot>
       <caption>In-game screenshot</caption>
-      <image>https://farm8.staticflickr.com/7044/6840397000_34e7699f1f_c.jpg</image>
+      <image>https://quetoo.org/images/screenshots/quetoo008.jpg</image>
+    </screenshot>
+    <screenshot>
+      <caption>In-game screenshot</caption>
+      <image>https://quetoo.org/images/screenshots/quetoo013.jpg</image>
+    </screenshot>
+    <screenshot>
+      <caption>In-game screenshot</caption>
+      <image>https://quetoo.org/images/screenshots/quetoo051.jpg</image>
     </screenshot>
   </screenshots>
   <update_contact>jay@jaydolan.com</update_contact>
