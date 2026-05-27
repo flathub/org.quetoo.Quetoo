@@ -44,6 +44,19 @@ modules:
         commands:
           - autoreconf -vfi
 
+  - name: ObjectivelyMVC
+    sources:
+      - type: git
+        url: https://github.com/jdolan/ObjectivelyMVC.git
+        tag: 'v1.0.1'
+        commit: 022991b9f835411e333365ef242f7ad545347d91
+        x-checker-data:
+          type: git
+          tag-pattern: ^v([\d.]+)$
+      - type: shell
+        commands:
+          - autoreconf -vfi
+
   - name: Quetoo-Data
     buildsystem: simple
     build-commands:
