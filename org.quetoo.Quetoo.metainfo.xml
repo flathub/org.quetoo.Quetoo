@@ -8,14 +8,26 @@
   <developer id="org.quetoo">
     <name>jdolan</name>
   </developer>
+  <branding>
+    <color type="primary" scheme_preference="light">#158477</color>
+    <color type="primary" scheme_preference="dark">#0d4e47</color>
+  </branding>
   <summary>A free first person shooter for Mac, PC and Linux</summary>
   <description>
     <p>
-      Quetoo ("Q2") is a free first person shooter for Mac, PC and Linux,
-      with roots steeped in the venerable Quake series. Our goal is to
-      bring the fun of oldschool deathmatch to a new generation of gamers.
+      Quetoo ("Q2") is a free first person shooter for Mac, PC and Linux.
+      Our goal is to bring the fun of oldschool deathmatch to a new generation of gamers.
       We're pwning nubz, one rail slug at a time.
     </p>
+    <ul>
+      <li>Deathmatch, Team DM, Capture the Flag, Instagib and Rocket Arena gameplay modes</li>
+      <li>High quality remakes of id Software's legendary Quake series deathmatch levels, as well as many originals</li>
+      <li>Realtime lighting with soft shadowmapping</li>
+      <li>Steep parallax occlusion mapping with self-shadowing</li>
+      <li>Dramatically improved artwork pipeline with in-game editor for level artists</li>
+      <li>TrenchBroom support</li>
+      <li>100% free to download, play and modify. Source code licensed under GPL v2, artwork under Creative Commons.</li>
+    </ul>
   </description>
   <url type="homepage">https://quetoo.org</url>
   <url type="bugtracker">https://github.com/jdolan/quetoo/issues</url>
