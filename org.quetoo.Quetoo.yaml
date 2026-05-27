@@ -1,0 +1,25 @@
+id: org.quetoo.Quetoo
+runtime: org.freedesktop.Platform
+runtime-version: '25.08'
+sdk: org.freedesktop.Sdk
+command: quetoo
+finish-args:
+  - --device=dri
+  - --share=ipc
+  - --share=network
+  - --socket=fallback-x11
+  - --socket=wayland
+  - --socket=pulseaudio
+  - --persist=.quetoo
+modules:
+  - shared-modules/physfs/physfs.json
+
+  - name: ObjectivelyMVC
+    sources:
+      - type: git
+        url: https://github.com/jdolan/ObjectivelyMVC.git
+        tag: 'v1.0.1'
+        commit: 022991b9f835411e333365ef242f7ad545347d91
+        x-checker-data:
+          type: git
+          tag-pattern: ^v([\d.]+)$
