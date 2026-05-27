@@ -27,7 +27,6 @@ modules:
   - shared-modules/physfs/physfs.json
 
   - name: Objectively
-    no-autogen: true
     sources:
       - type: git
         url: https://github.com/jdolan/Objectively.git
@@ -36,9 +35,11 @@ modules:
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
+      - type: shell
+        commands:
+          - autoreconf -vfi
 
   - name: ObjectivelyMVC
-    no-autogen: true
     sources:
       - type: git
         url: https://github.com/jdolan/ObjectivelyMVC.git
@@ -47,9 +48,11 @@ modules:
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
+      - type: shell
+        commands:
+          - autoreconf -vfi
 
   - name: Quetoo
-    no-autogen: true
     sources:
       - type: git
         url: https://github.com/jdolan/quetoo.git
@@ -58,6 +61,9 @@ modules:
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
+      - type: shell
+        commands:
+          - autoreconf -vfi
 
   - name: Quetoo-Data
     buildsystem: simple
