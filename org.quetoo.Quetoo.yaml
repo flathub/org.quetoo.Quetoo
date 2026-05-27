@@ -50,7 +50,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/jdolan/quetoo.git
-        tag: '1.0.24'
+        tag: 'v1.0.24'
         commit: 5cc90ca26cbfc54c0e36873c954e8816c4cde25c
         x-checker-data:
           type: git
@@ -63,7 +63,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/jdolan/quetoo-data.git
-        tag: '1.0.6'
+        tag: 'v1.0.6'
         commit: a4058eff37d857a5d2ff2bf06db0871ae573f652
         x-checker-data:
           type: git
