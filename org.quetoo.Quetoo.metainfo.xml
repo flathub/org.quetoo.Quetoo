@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
   <id>org.quetoo.Quetoo</id>
+  <launchable type="desktop-id">org.quetoo.Quetoo.desktop</launchable>
   <name>Quetoo</name>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0+</project_license>
@@ -16,13 +17,9 @@
       We're pwning nubz, one rail slug at a time.
     </p>
   </description>
-  <url type="homepage">https://www.quetoo.org</url>
+  <url type="homepage">https://quetoo.org</url>
   <url type="bugtracker">https://github.com/jdolan/quetoo/issues</url>
   <url type="vcs-browser">https://github.com/jdolan/quetoo</url>
-  <launchable type="desktop-id">org.quetoo.Quetoo.desktop</launchable>
-  <provides>
-    <id>org.quetoo.Quetoo.desktop</id>
-  </provides>
   <screenshots>
     <screenshot type="default">
       <caption>In-game screenshot</caption>
@@ -41,13 +38,10 @@
   <content_rating type="oars-1.1">
     <content_attribute id="violence-cartoon">intense</content_attribute>
     <content_attribute id="violence-fantasy">intense</content_attribute>
-    <content_attribute id="violence-realistic">intense</content_attribute>
     <content_attribute id="violence-bloodshed">intense</content_attribute>
-    <content_attribute id="violence-desecration">intense</content_attribute>
-<!--    <content_attribute id="social-chat">intense</content_attribute>
-    <content_attribute id="social-audio">intense</content_attribute>-->
-    </content_rating>
+    <content_attribute id="social-chat">intense</content_attribute>
+  </content_rating>
   <releases>
-    <release version="0.1.0" date="2021-04-08" type="development"/>
+    <release version="1.0.24" date="2026-05-27"/>
   </releases>
 </component>
