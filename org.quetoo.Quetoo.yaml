@@ -27,6 +27,7 @@ modules:
   - shared-modules/physfs/physfs.json
 
   - name: Objectively
+    no-autogen: true
     sources:
       - type: git
         url: https://github.com/jdolan/Objectively.git
@@ -37,6 +38,7 @@ modules:
           tag-pattern: ^v([\d.]+)$
 
   - name: ObjectivelyMVC
+    no-autogen: true
     sources:
       - type: git
         url: https://github.com/jdolan/ObjectivelyMVC.git
@@ -47,6 +49,7 @@ modules:
           tag-pattern: ^v([\d.]+)$
 
   - name: Quetoo
+    no-autogen: true
     sources:
       - type: git
         url: https://github.com/jdolan/quetoo.git
