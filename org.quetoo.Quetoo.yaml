@@ -12,15 +12,8 @@ finish-args:
   - --socket=pulseaudio
   - --persist=.quetoo
 cleanup:
-  - /bin/checkmk
-  - /bin/test_physfs
   - /include
   - /lib/pkgconfig
-  - /man
-  - /share/aclocal
-  - /share/doc
-  - /share/info
-  - /share/pkgconfig
   - /share/man
   - '*.la'
   - '*.a'
@@ -65,6 +58,9 @@ modules:
           - autoreconf -vfi
 
   - name: Quetoo
+    post-install:
+      - install -Dm644 linux/quetoo/Quetoo.desktop /app/share/applications/org.quetoo.Quetoo.desktop
+      - desktop-file-edit --set-icon=org.quetoo.Quetoo /app/share/applications/org.quetoo.Quetoo.desktop
     sources:
       - type: git
         url: https://github.com/jdolan/quetoo.git
