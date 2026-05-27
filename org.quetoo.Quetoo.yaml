@@ -10,9 +10,9 @@ finish-args:
   - --socket=fallback-x11
   - --socket=wayland
   - --socket=pulseaudio
-  - --persist=.quetoo
 cleanup:
   - /include
+  - /lib/cmake
   - /lib/pkgconfig
   - /share/man
   - '*.la'
@@ -44,35 +44,6 @@ modules:
         commands:
           - autoreconf -vfi
 
-  - name: ObjectivelyMVC
-    sources:
-      - type: git
-        url: https://github.com/jdolan/ObjectivelyMVC.git
-        tag: 'v1.0.1'
-        commit: 022991b9f835411e333365ef242f7ad545347d91
-        x-checker-data:
-          type: git
-          tag-pattern: ^v([\d.]+)$
-      - type: shell
-        commands:
-          - autoreconf -vfi
-
-  - name: Quetoo
-    post-install:
-      - install -Dm644 linux/quetoo/Quetoo.desktop /app/share/applications/org.quetoo.Quetoo.desktop
-      - desktop-file-edit --set-icon=org.quetoo.Quetoo /app/share/applications/org.quetoo.Quetoo.desktop
-    sources:
-      - type: git
-        url: https://github.com/jdolan/quetoo.git
-        tag: 'v1.0.24'
-        commit: 5cc90ca26cbfc54c0e36873c954e8816c4cde25c
-        x-checker-data:
-          type: git
-          tag-pattern: ^v([\d.]+)$
-      - type: shell
-        commands:
-          - autoreconf -vfi
-
   - name: Quetoo-Data
     buildsystem: simple
     build-commands:
@@ -86,13 +57,25 @@ modules:
           type: git
           tag-pattern: ^v([\d.]+)$
 
-  - name: desktop-integration
-    buildsystem: simple
-    build-commands:
-      - install -Dm644 org.quetoo.Quetoo.metainfo.xml -t /app/share/metainfo
-      - install -Dm644 org.quetoo.Quetoo.png -t /app/share/icons/hicolor/256x256/apps
+  - name: Quetoo
     sources:
+      - type: git
+        url: https://github.com/jdolan/quetoo.git
+        tag: 'v1.0.24'
+        commit: 5cc90ca26cbfc54c0e36873c954e8816c4cde25c
+        x-checker-data:
+          type: git
+          tag-pattern: ^v([\d.]+)$
+          is-main-source: true
+      - type: shell
+        commands:
+          - autoreconf -vfi
       - type: file
         path: org.quetoo.Quetoo.metainfo.xml
       - type: file
         path: org.quetoo.Quetoo.png
+    post-install:
+      - install -Dm644 org.quetoo.Quetoo.metainfo.xml -t /app/share/metainfo
+      - install -Dm644 org.quetoo.Quetoo.png -t /app/share/icons/hicolor/256x256/apps
+      - install -Dm644 linux/quetoo/Quetoo.desktop /app/share/applications/org.quetoo.Quetoo.desktop
+      - desktop-file-edit --set-icon=org.quetoo.Quetoo /app/share/applications/org.quetoo.Quetoo.desktop
