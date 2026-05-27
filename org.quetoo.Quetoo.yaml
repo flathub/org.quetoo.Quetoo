@@ -68,3 +68,14 @@ modules:
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
+
+  - name: desktop-integration
+    buildsystem: simple
+    build-commands:
+      - install -Dm644 org.quetoo.Quetoo.metainfo.xml -t /app/share/metainfo
+      - install -Dm644 org.quetoo.Quetoo.png -t /app/share/icons/hicolor/256x256/apps
+    sources:
+      - type: file
+        path: org.quetoo.Quetoo.metainfo.xml
+      - type: file
+        path: org.quetoo.Quetoo.png
