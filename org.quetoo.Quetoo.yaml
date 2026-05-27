@@ -11,8 +11,30 @@ finish-args:
   - --socket=wayland
   - --socket=pulseaudio
   - --persist=.quetoo
+cleanup:
+  - /bin/test_physfs
+  - /include
+  - /lib/pkgconfig
+  - /man
+  - /share/aclocal
+  - /share/doc
+  - /share/info
+  - /share/pkgconfig
+  - /share/man
+  - '*.la'
+  - '*.a'
 modules:
   - shared-modules/physfs/physfs.json
+
+  - name: Objectively
+    sources:
+      - type: git
+        url: https://github.com/jdolan/Objectively.git
+        tag: 'v1.0.3'
+        commit: 3229e2a158e5fee4245a33721f2b99679e67a66e
+        x-checker-data:
+          type: git
+          tag-pattern: ^v([\d.]+)$
 
   - name: ObjectivelyMVC
     sources:
@@ -20,6 +42,29 @@ modules:
         url: https://github.com/jdolan/ObjectivelyMVC.git
         tag: 'v1.0.1'
         commit: 022991b9f835411e333365ef242f7ad545347d91
+        x-checker-data:
+          type: git
+          tag-pattern: ^v([\d.]+)$
+
+  - name: Quetoo
+    sources:
+      - type: git
+        url: https://github.com/jdolan/quetoo.git
+        tag: '1.0.24'
+        commit: 5cc90ca26cbfc54c0e36873c954e8816c4cde25c
+        x-checker-data:
+          type: git
+          tag-pattern: ^v([\d.]+)$
+
+  - name: Quetoo-Data
+    buildsystem: simple
+    build-commands:
+      - cp -a target /app/share/quetoo
+    sources:
+      - type: git
+        url: https://github.com/jdolan/quetoo-data.git
+        tag: '1.0.6'
+        commit: a4058eff37d857a5d2ff2bf06db0871ae573f652
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
