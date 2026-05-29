@@ -61,11 +61,12 @@ modules:
     buildsystem: simple
     build-commands:
       - cp -a target /app/share/quetoo
+      - install -Dm644 target/default/icons/quetoo.png /app/share/icons/hicolor/512x512/apps/org.quetoo.Quetoo.png
     sources:
       - type: git
         url: https://github.com/jdolan/quetoo-data.git
-        tag: 'v1.0.6'
-        commit: a4058eff37d857a5d2ff2bf06db0871ae573f652
+        tag: 'v1.0.7'
+        commit: 4cfd7cc86de204b8817db27d184b6f8430a12e6a
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
@@ -74,8 +75,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/jdolan/quetoo.git
-        tag: 'v1.0.24'
-        commit: 5cc90ca26cbfc54c0e36873c954e8816c4cde25c
+        tag: 'v1.0.26'
+        commit: f3d54613ce53038dcc577b3985a1b046a432a416
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
@@ -89,6 +90,5 @@ modules:
         path: org.quetoo.Quetoo.png
     post-install:
       - install -Dm644 org.quetoo.Quetoo.metainfo.xml -t /app/share/metainfo
-      - install -Dm644 org.quetoo.Quetoo.png -t /app/share/icons/hicolor/256x256/apps
       - install -Dm644 linux/quetoo/Quetoo.desktop /app/share/applications/org.quetoo.Quetoo.desktop
       - desktop-file-edit --set-icon=org.quetoo.Quetoo /app/share/applications/org.quetoo.Quetoo.desktop
