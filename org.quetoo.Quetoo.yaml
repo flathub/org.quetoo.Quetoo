@@ -86,8 +86,6 @@ modules:
           - autoreconf -vfi
       - type: file
         path: org.quetoo.Quetoo.metainfo.xml
-      - type: file
-        path: org.quetoo.Quetoo.png
     post-install:
       - install -Dm644 org.quetoo.Quetoo.metainfo.xml -t /app/share/metainfo
       - install -Dm644 linux/quetoo/Quetoo.desktop /app/share/applications/org.quetoo.Quetoo.desktop
