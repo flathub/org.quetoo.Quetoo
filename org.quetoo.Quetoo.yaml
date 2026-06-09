@@ -71,8 +71,12 @@ modules:
           tag-pattern: ^v([\d.]+)$
 
   - name: Quetoo
+    build-options:
+      env:
+        CFLAGS: ''
     config-opts:
       - --enable-optimizations=expensive
+      - --disable-debug
     sources:
       - type: git
         url: https://github.com/jdolan/quetoo.git
