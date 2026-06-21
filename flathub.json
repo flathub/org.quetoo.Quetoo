@@ -1,3 +1,4 @@
 {
-  "disable-external-data-checker": true
+  "disable-external-data-checker": true,
+  "require-important-update": true
 }
