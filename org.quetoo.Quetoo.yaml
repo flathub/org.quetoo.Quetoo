@@ -35,10 +35,11 @@ modules:
     sources:
       - type: git
         url: https://github.com/jdolan/Objectively.git
-        commit: d14131b3a71723dcc46377682a9d1b8e814f110a
+        commit: 08335353c1a181340389c405a2e895702f0ec968
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
+        tag: v2.0.12
       - type: shell
         commands:
           - autoreconf -vfi
@@ -47,10 +48,11 @@ modules:
     sources:
       - type: git
         url: https://github.com/jdolan/ObjectivelyGPU.git
-        commit: d1d3b2cc21e29b6e2139c598a55449a175ff6b95
+        commit: 39d2527d301b83a2c60bb0129ce7c5825446a37e
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
+        tag: v0.6.0
       - type: shell
         commands:
           - autoreconf -vfi
@@ -59,10 +61,11 @@ modules:
     sources:
       - type: git
         url: https://github.com/jdolan/ObjectivelyMVC.git
-        commit: 47c346caed0bf52595e2a2416d2b7faa5a35727c
+        commit: 384049ae150f30b5c9dfaca48b0bda171124bbaf
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
+        tag: v2.1.2
       - type: shell
         commands:
           - autoreconf -vfi
@@ -91,8 +94,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/jdolan/quetoo.git
-        tag: v1.0.58
-        commit: 7fa05f4634ea50b3d2af9ede201e369b8540c6f4
+        tag: v1.0.59
+        commit: 1348f1b9dc5c71503c8e5e71fcdd0049c474631a
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
