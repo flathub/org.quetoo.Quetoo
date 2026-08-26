@@ -44,15 +44,18 @@ modules:
         commands:
           - autoreconf -vfi
 
+  # Pinned past v0.10.0 on purpose. Quetoo v1.0.82 calls TransferBuffer::write,
+  # which was added in e882666 after that tag, so building against v0.10.0 fails
+  # with "TransferBufferInterface has no member named write". Restore the tag
+  # pin once a release ships containing it.
   - name: ObjectivelyGPU
     sources:
       - type: git
         url: https://github.com/jdolan/ObjectivelyGPU.git
-        commit: f1b257a661426acb9868607e3aa3904434a01426
+        commit: a1bc32eb8bf20e7fbbb31ffe43b4bcb188b70a63
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
-        tag: v0.10.0
       - type: shell
         commands:
           - autoreconf -vfi
