@@ -3,7 +3,6 @@ runtime: org.freedesktop.Platform
 runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 command: quetoo
-rename-desktop-file: Quetoo.desktop
 rename-icon: quetoo
 finish-args:
   - --device=dri
@@ -105,3 +104,6 @@ modules:
       - type: shell
         commands:
           - autoreconf -vfi
+    post-install:
+      - install -Dm644 linux/quetoo/Quetoo.desktop /app/share/applications/org.quetoo.Quetoo.desktop
+      - desktop-file-edit --set-icon=org.quetoo.Quetoo /app/share/applications/org.quetoo.Quetoo.desktop
