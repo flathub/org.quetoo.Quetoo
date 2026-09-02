@@ -1,6 +1,6 @@
 id: org.quetoo.Quetoo
 runtime: org.freedesktop.Platform
-runtime-version: '25.08'
+runtime-version: '26.08'
 sdk: org.freedesktop.Sdk
 command: quetoo
 finish-args:
@@ -35,28 +35,24 @@ modules:
     sources:
       - type: git
         url: https://github.com/jdolan/Objectively.git
+        tag: v2.0.23
         commit: 65e27fa0bb64301cdf5bf60e729354c83a502b6b
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
-        tag: v2.0.23
       - type: shell
         commands:
           - autoreconf -vfi
 
-  # Pinned past v0.10.0 on purpose. Quetoo v1.0.82 calls TransferBuffer::write,
-  # which was added in e882666 after that tag, so building against v0.10.0 fails
-  # with "TransferBufferInterface has no member named write". Restore the tag
-  # pin once a release ships containing it.
   - name: ObjectivelyGPU
     sources:
       - type: git
         url: https://github.com/jdolan/ObjectivelyGPU.git
+        tag: v1.0.0
         commit: b1548b575fa66114df87c64a1c30f4b7a4885089
         x-checker-data:
           type: git
-          tag-pattern: ^v([\d.]+)$
-        tag: v1.0.0
+          tag-pattern: ^v([\d.]+)$        
       - type: shell
         commands:
           - autoreconf -vfi
@@ -65,11 +61,11 @@ modules:
     sources:
       - type: git
         url: https://github.com/jdolan/ObjectivelyMVC.git
+        tag: v2.1.7
         commit: c1d32c0b62cdf71dddcc4989bc7a9fdcca244462
         x-checker-data:
           type: git
-          tag-pattern: ^v([\d.]+)$
-        tag: v2.1.7
+          tag-pattern: ^v([\d.]+)$        
       - type: shell
         commands:
           - autoreconf -vfi
@@ -81,13 +77,13 @@ modules:
     sources:
       - type: git
         url: https://github.com/jdolan/quetoo-data.git
+        tag: v1.0.30
         commit: 90a1b04523f1e2b5b89ad0b33c505fcbf1c25a29
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
           is-important: true
 
-        tag: v1.0.30
   - name: Quetoo
     build-options:
       env:
