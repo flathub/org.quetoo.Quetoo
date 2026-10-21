@@ -61,8 +61,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/jdolan/ObjectivelyMVC.git
-        tag: v2.5.10
-        commit: 85b90675ce7126cc0972f4371caef0c8caa57012
+        tag: v2.5.12
+        commit: 41df87ca970141d7994e368b339aae921aa01ea2
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
@@ -77,8 +77,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/jdolan/quetoo-data.git
-        tag: v1.0.55
-        commit: f6c71dfbeb94a2ce5cc0a6a24bd5fd1282c4065b
+        tag: v1.0.61
+        commit: b6d2789a1b8f5c8d2cdecaf158a34aaf062e2010
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
@@ -94,8 +94,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/jdolan/quetoo.git
-        tag: v1.0.127
-        commit: 9c1487bd36ef9c94618155b5b0ac85e7abbd06dc
+        tag: v1.0.133
+        commit: ca724a655032d88dc6c07f4d0f9b7dd1774797bf
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
