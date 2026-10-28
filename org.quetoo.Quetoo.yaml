@@ -77,8 +77,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/jdolan/quetoo-data.git
-        tag: v1.0.61
-        commit: b6d2789a1b8f5c8d2cdecaf158a34aaf062e2010
+        tag: v1.0.67
+        commit: 8d93597f996458a651ab46b5b8b42c8958f0a594
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
@@ -94,8 +94,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/jdolan/quetoo.git
-        tag: v1.0.133
-        commit: ca724a655032d88dc6c07f4d0f9b7dd1774797bf
+        tag: v1.0.138
+        commit: 965aaa249f115e8c6f57a30c377a9c9dc91505d2
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
