@@ -62,9 +62,13 @@
     <content_attribute id="social-chat">intense</content_attribute>
   </content_rating>
   <releases>
+    <release version="1.0.147" date="2026-11-25">
+      <url type="details">https://github.com/jdolan/quetoo/releases/tag/v1.0.147</url>
+      <description></description>
+    </release>
     <release version="1.0.145" date="2026-11-11">
       <url type="details">https://github.com/jdolan/quetoo/releases/tag/v1.0.145</url>
-      <description></description>
+      <description/>
     </release>
     <release version="1.0.138" date="2026-10-28">
       <description/>
